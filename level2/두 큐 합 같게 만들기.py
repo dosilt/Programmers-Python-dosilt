@@ -6,7 +6,7 @@ def solution(queue1, queue2):
     left_sum, right_sum = sum(queue1), sum(queue2)
     queue1, queue2 = deque(queue1), deque(queue2)
     
-    length = (len(queue1) + len(queue2)) * 2
+    length = len(queue1) + len(queue2) * 2
     
     answer = 0
     for i in range(length):
